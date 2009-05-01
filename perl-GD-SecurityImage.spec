@@ -1,5 +1,5 @@
 %define module   GD-SecurityImage
-%define version    1.66
+%define version    1.70
 %define release    %mkrel 1
 
 Name:       perl-%{module}
