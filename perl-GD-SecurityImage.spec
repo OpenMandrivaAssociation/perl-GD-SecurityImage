@@ -1,19 +1,19 @@
-%define module   GD-SecurityImage
-%define version    1.70
-%define release    %mkrel 2
+%define upstream_name    GD-SecurityImage
+%define upstream_version 1.70
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Security image (captcha) generator
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/GD/%{module}-%{version}.tar.gz
-BuildRequires: perl-devel
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/GD/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(GD)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The (so called) _"Security Images"_ are so popular. Most internet software
@@ -37,7 +37,7 @@ Implementations" manpage in the /"SEE ALSO" manpage section for
 information.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
