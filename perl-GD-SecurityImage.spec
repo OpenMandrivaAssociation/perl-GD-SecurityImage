@@ -1,15 +1,15 @@
 %define upstream_name    GD-SecurityImage
-%define upstream_version 1.70
+%define upstream_version 1.72
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.72
+Release:	1
 
 Summary:	Security image (captcha) generator
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/GD/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/GD/GD-SecurityImage-1.72.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(GD)
@@ -75,4 +75,5 @@ make test
 
 * Tue Mar 17 2009 cpan2dist 1.66-1mdv
 - initial mdv release, generated with cpan2dist
+
 
