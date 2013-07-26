@@ -1,2 +1,4 @@
+removed_sources:
+  GD-SecurityImage-1.70.tar.gz: c79478da39fb52320ee25ed242b8ee8c87fad0c3
 sources:
-  "GD-SecurityImage-1.70.tar.gz": c79478da39fb52320ee25ed242b8ee8c87fad0c3
+  GD-SecurityImage-1.72.tar.gz: 346dc154c6cd336888bc3075e05be4ea4403a5b5
