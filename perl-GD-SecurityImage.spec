@@ -8,7 +8,7 @@ Release:	3
 Summary:	Security image (captcha) generator
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/GD/GD-SecurityImage-1.72.tar.gz
 
 BuildRequires:	perl-devel
