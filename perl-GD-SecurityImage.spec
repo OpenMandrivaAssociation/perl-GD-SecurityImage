@@ -1,9 +1,7 @@
 %define upstream_name    GD-SecurityImage
-%define upstream_version 1.75
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.75
+Release:	2
 
 Summary:	Security image (captcha) generator
 License:	GPL+ or Artistic
@@ -38,7 +36,7 @@ Implementations" manpage in the /"SEE ALSO" manpage section for
 information.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -58,8 +56,7 @@ make test
 %changelog
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1.700.0-1mdv2010.0
 + Revision: 401659
-- rebuild using %%perl_convert_version
-- fixed license field
+- rebuild using %1.75 fixed license field
 
 * Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 1.70-2mdv2010.0
 + Revision: 375950
